@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.lmar</groupId>
 	<artifactId>seek-customer-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>seek-customer-service</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -96,6 +96,17 @@
 			<artifactId>mapstruct-processor</artifactId>
 			<version>1.5.5.Final</version>
 			<scope>provided</scope>
+		</dependency>
+
+		<!--Metricas del Sistema-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
 		</dependency>
 
 		<!--Lombok-->

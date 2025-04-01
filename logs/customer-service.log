@@ -220,3 +220,241 @@ This generated password is for development use only. Your security configuration
 2025-04-01T18:31:21.474-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-2] c.l.s.service.CustomerService            : Procesando cliente: Maria
 2025-04-01T18:31:32.459-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-6] c.l.s.service.CustomerService            : Consultando estadísticas de los clientes...
 2025-04-01T18:31:32.481-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-6] c.l.s.service.CustomerService            : Estadísticas -> Promedio: 25.0 - Desviacion Estandar: 4.08248290463863
+2025-04-01T18:38:14.410-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-2] c.l.s.service.CustomerService            : Registrando cliente...
+2025-04-01T18:38:14.465-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-2] c.l.s.service.CustomerService            : Cliente registrado-> nombres: Paola
+2025-04-01T18:38:17.566-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-1] c.l.s.service.CustomerService            : Consultando lista de clientes...
+2025-04-01T18:38:17.570-05:00 DEBUG 18304 --- [seek-customer-service] [http-nio-9092-exec-1] c.l.s.service.CustomerService            : Se encontraron 4 clientes
+2025-04-01T18:38:17.570-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-1] c.l.s.service.CustomerService            : Procesando cliente: Juan
+2025-04-01T18:38:17.570-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-1] c.l.s.service.CustomerService            : Procesando cliente: Luis
+2025-04-01T18:38:17.570-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-1] c.l.s.service.CustomerService            : Procesando cliente: Maria
+2025-04-01T18:38:17.570-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-1] c.l.s.service.CustomerService            : Procesando cliente: Paola
+2025-04-01T18:38:44.877-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-5] c.l.s.service.CustomerService            : Consultando estadísticas de los clientes...
+2025-04-01T18:38:44.880-05:00  INFO 18304 --- [seek-customer-service] [http-nio-9092-exec-5] c.l.s.service.CustomerService            : Estadísticas -> Promedio: 27.5 - Desviacion Estandar: 5.5901699437494745
+2025-04-01T18:41:14.287-05:00  INFO 18304 --- [seek-customer-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01T18:41:14.543-05:00  INFO 18304 --- [seek-customer-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-01T18:41:14.545-05:00  INFO 18304 --- [seek-customer-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-01T18:41:14.548-05:00  INFO 18304 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-01T18:41:14.553-05:00  INFO 18304 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-01T18:41:21.691-05:00  INFO 11588 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Starting SeekCustomerServiceApplication using Java 17.0.8 with PID 11588 (D:\workspace\empresas\seek\seek-customer-service\target\classes started by lmar11 in D:\workspace\empresas\seek\seek-customer-service)
+2025-04-01T18:41:21.693-05:00 DEBUG 11588 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-01T18:41:21.695-05:00  INFO 11588 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-01T18:41:23.221-05:00  INFO 11588 --- [seek-customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-01T18:41:23.295-05:00  INFO 11588 --- [seek-customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-04-01T18:41:24.594-05:00  INFO 11588 --- [seek-customer-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9092 (http)
+2025-04-01T18:41:24.624-05:00  INFO 11588 --- [seek-customer-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-01T18:41:24.625-05:00  INFO 11588 --- [seek-customer-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-01T18:41:24.769-05:00  INFO 11588 --- [seek-customer-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-01T18:41:24.770-05:00  INFO 11588 --- [seek-customer-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3018 ms
+2025-04-01T18:41:25.269-05:00 DEBUG 11588 --- [seek-customer-service] [main] c.l.s.security.JwtAuthenticationFilter   : Filter 'jwtTokenFilter' configured for use
+2025-04-01T18:41:25.720-05:00  INFO 11588 --- [seek-customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-01T18:41:26.102-05:00  INFO 11588 --- [seek-customer-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@533e2f4
+2025-04-01T18:41:26.106-05:00  INFO 11588 --- [seek-customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-01T18:41:26.178-05:00  INFO 11588 --- [seek-customer-service] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_customer_seek?useSSL=false&serverTimezone=UTC (MySQL 8.0)
+2025-04-01T18:41:26.254-05:00  INFO 11588 --- [seek-customer-service] [main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.037s)
+2025-04-01T18:41:26.254-05:00  WARN 11588 --- [seek-customer-service] [main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-04-01T18:41:26.283-05:00  INFO 11588 --- [seek-customer-service] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_customer_seek`: << Empty Schema >>
+2025-04-01T18:41:26.289-05:00  INFO 11588 --- [seek-customer-service] [main] o.f.core.internal.command.DbMigrate      : Schema `db_customer_seek` is up to date. No migration necessary.
+2025-04-01T18:41:26.474-05:00  INFO 11588 --- [seek-customer-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-01T18:41:26.545-05:00  INFO 11588 --- [seek-customer-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-01T18:41:26.635-05:00  INFO 11588 --- [seek-customer-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-01T18:41:27.120-05:00  INFO 11588 --- [seek-customer-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-01T18:41:27.233-05:00  WARN 11588 --- [seek-customer-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-01T18:41:27.234-05:00  WARN 11588 --- [seek-customer-service] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-01T18:41:27.263-05:00  INFO 11588 --- [seek-customer-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-01T18:41:28.031-05:00  INFO 11588 --- [seek-customer-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-01T18:41:28.062-05:00  INFO 11588 --- [seek-customer-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-01T18:41:28.563-05:00  INFO 11588 --- [seek-customer-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-01T18:41:29.783-05:00  WARN 11588 --- [seek-customer-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-01T18:41:29.841-05:00  WARN 11588 --- [seek-customer-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4ad3ed3e-ae4c-4791-9b50-168b93e86715
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-01T18:41:29.886-05:00  INFO 11588 --- [seek-customer-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-01T18:41:30.671-05:00  INFO 11588 --- [seek-customer-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoints beneath base path '/actuator'
+2025-04-01T18:41:31.965-05:00  INFO 11588 --- [seek-customer-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9092 (http) with context path '/'
+2025-04-01T18:41:31.986-05:00  INFO 11588 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Started SeekCustomerServiceApplication in 10.943 seconds (process running for 11.322)
+2025-04-01T18:41:32.842-05:00  INFO 11588 --- [seek-customer-service] [http-nio-9092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-01T18:41:32.843-05:00  INFO 11588 --- [seek-customer-service] [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-01T18:41:32.845-05:00  INFO 11588 --- [seek-customer-service] [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-01T18:43:31.786-05:00  INFO 11588 --- [seek-customer-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01T18:43:32.057-05:00  INFO 11588 --- [seek-customer-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-01T18:43:32.061-05:00  INFO 11588 --- [seek-customer-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-01T18:43:32.064-05:00  INFO 11588 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-01T18:43:32.070-05:00  INFO 11588 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-01T18:43:35.365-05:00  INFO 10648 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Starting SeekCustomerServiceApplication using Java 17.0.8 with PID 10648 (D:\workspace\empresas\seek\seek-customer-service\target\classes started by lmar11 in D:\workspace\empresas\seek\seek-customer-service)
+2025-04-01T18:43:35.368-05:00 DEBUG 10648 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-01T18:43:35.369-05:00  INFO 10648 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-01T18:43:36.823-05:00  INFO 10648 --- [seek-customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-01T18:43:36.894-05:00  INFO 10648 --- [seek-customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2025-04-01T18:43:38.148-05:00  INFO 10648 --- [seek-customer-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9092 (http)
+2025-04-01T18:43:38.176-05:00  INFO 10648 --- [seek-customer-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-01T18:43:38.177-05:00  INFO 10648 --- [seek-customer-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-01T18:43:38.309-05:00  INFO 10648 --- [seek-customer-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-01T18:43:38.310-05:00  INFO 10648 --- [seek-customer-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2875 ms
+2025-04-01T18:43:38.808-05:00 DEBUG 10648 --- [seek-customer-service] [main] c.l.s.security.JwtAuthenticationFilter   : Filter 'jwtTokenFilter' configured for use
+2025-04-01T18:43:39.277-05:00  INFO 10648 --- [seek-customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-01T18:43:39.729-05:00  INFO 10648 --- [seek-customer-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d9428f3
+2025-04-01T18:43:39.733-05:00  INFO 10648 --- [seek-customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-01T18:43:39.816-05:00  INFO 10648 --- [seek-customer-service] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_customer_seek?useSSL=false&serverTimezone=UTC (MySQL 8.0)
+2025-04-01T18:43:39.910-05:00  INFO 10648 --- [seek-customer-service] [main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.043s)
+2025-04-01T18:43:39.910-05:00  WARN 10648 --- [seek-customer-service] [main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-04-01T18:43:39.942-05:00  INFO 10648 --- [seek-customer-service] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_customer_seek`: << Empty Schema >>
+2025-04-01T18:43:39.953-05:00  INFO 10648 --- [seek-customer-service] [main] o.f.core.internal.command.DbMigrate      : Schema `db_customer_seek` is up to date. No migration necessary.
+2025-04-01T18:43:40.153-05:00  INFO 10648 --- [seek-customer-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-01T18:43:40.250-05:00  INFO 10648 --- [seek-customer-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-01T18:43:40.308-05:00  INFO 10648 --- [seek-customer-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-01T18:43:40.815-05:00  INFO 10648 --- [seek-customer-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-01T18:43:40.934-05:00  WARN 10648 --- [seek-customer-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-01T18:43:40.937-05:00  WARN 10648 --- [seek-customer-service] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-01T18:43:40.979-05:00  INFO 10648 --- [seek-customer-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-01T18:43:41.701-05:00  INFO 10648 --- [seek-customer-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-01T18:43:41.734-05:00  INFO 10648 --- [seek-customer-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-01T18:43:42.328-05:00  INFO 10648 --- [seek-customer-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-01T18:43:43.702-05:00  WARN 10648 --- [seek-customer-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-01T18:43:43.801-05:00  WARN 10648 --- [seek-customer-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 80445b2d-cb9f-4d07-8c4b-2f45fc56a474
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-01T18:43:43.858-05:00  INFO 10648 --- [seek-customer-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-01T18:43:44.921-05:00  INFO 10648 --- [seek-customer-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoints beneath base path '/actuator'
+2025-04-01T18:43:46.174-05:00  INFO 10648 --- [seek-customer-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9092 (http) with context path '/'
+2025-04-01T18:43:46.195-05:00  INFO 10648 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Started SeekCustomerServiceApplication in 11.342 seconds (process running for 11.743)
+2025-04-01T18:44:29.285-05:00  INFO 10648 --- [seek-customer-service] [http-nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-01T18:44:29.286-05:00  INFO 10648 --- [seek-customer-service] [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-01T18:44:29.287-05:00  INFO 10648 --- [seek-customer-service] [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-01T18:44:29.902-05:00  INFO 10648 --- [seek-customer-service] [http-nio-9092-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 333 ms
+2025-04-01T18:48:21.218-05:00  INFO 10648 --- [seek-customer-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01T18:48:21.494-05:00  INFO 10648 --- [seek-customer-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-01T18:48:21.498-05:00  INFO 10648 --- [seek-customer-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-01T18:48:21.501-05:00  INFO 10648 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-01T18:48:21.509-05:00  INFO 10648 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-01T18:48:25.510-05:00  INFO 8680 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Starting SeekCustomerServiceApplication using Java 17.0.8 with PID 8680 (D:\workspace\empresas\seek\seek-customer-service\target\classes started by lmar11 in D:\workspace\empresas\seek\seek-customer-service)
+2025-04-01T18:48:25.512-05:00 DEBUG 8680 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-01T18:48:25.514-05:00  INFO 8680 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-01T18:48:27.037-05:00  INFO 8680 --- [seek-customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-01T18:48:27.113-05:00  INFO 8680 --- [seek-customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2025-04-01T18:48:28.302-05:00  INFO 8680 --- [seek-customer-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9092 (http)
+2025-04-01T18:48:28.329-05:00  INFO 8680 --- [seek-customer-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-01T18:48:28.330-05:00  INFO 8680 --- [seek-customer-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-01T18:48:28.443-05:00  INFO 8680 --- [seek-customer-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-01T18:48:28.444-05:00  INFO 8680 --- [seek-customer-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2877 ms
+2025-04-01T18:48:28.898-05:00 DEBUG 8680 --- [seek-customer-service] [main] c.l.s.security.JwtAuthenticationFilter   : Filter 'jwtTokenFilter' configured for use
+2025-04-01T18:48:29.292-05:00  INFO 8680 --- [seek-customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-01T18:48:29.600-05:00  INFO 8680 --- [seek-customer-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75bf9e67
+2025-04-01T18:48:29.603-05:00  INFO 8680 --- [seek-customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-01T18:48:29.701-05:00  INFO 8680 --- [seek-customer-service] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_customer_seek?useSSL=false&serverTimezone=UTC (MySQL 8.0)
+2025-04-01T18:48:29.818-05:00  INFO 8680 --- [seek-customer-service] [main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.072s)
+2025-04-01T18:48:29.819-05:00  WARN 8680 --- [seek-customer-service] [main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-04-01T18:48:29.855-05:00  INFO 8680 --- [seek-customer-service] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_customer_seek`: << Empty Schema >>
+2025-04-01T18:48:29.871-05:00  INFO 8680 --- [seek-customer-service] [main] o.f.core.internal.command.DbMigrate      : Schema `db_customer_seek` is up to date. No migration necessary.
+2025-04-01T18:48:30.058-05:00  INFO 8680 --- [seek-customer-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-01T18:48:30.147-05:00  INFO 8680 --- [seek-customer-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-01T18:48:30.229-05:00  INFO 8680 --- [seek-customer-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-01T18:48:30.726-05:00  INFO 8680 --- [seek-customer-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-01T18:48:30.876-05:00  WARN 8680 --- [seek-customer-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-01T18:48:30.879-05:00  WARN 8680 --- [seek-customer-service] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-01T18:48:30.928-05:00  INFO 8680 --- [seek-customer-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-01T18:48:31.684-05:00  INFO 8680 --- [seek-customer-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-01T18:48:31.718-05:00  INFO 8680 --- [seek-customer-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-01T18:48:32.248-05:00  INFO 8680 --- [seek-customer-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-01T18:48:33.246-05:00  WARN 8680 --- [seek-customer-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-01T18:48:33.297-05:00  WARN 8680 --- [seek-customer-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 090f5ea3-9b03-48c7-9666-feeec6208d9b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-01T18:48:33.354-05:00  INFO 8680 --- [seek-customer-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-01T18:48:34.200-05:00  INFO 8680 --- [seek-customer-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoints beneath base path '/actuator'
+2025-04-01T18:48:35.414-05:00  INFO 8680 --- [seek-customer-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9092 (http) with context path '/'
+2025-04-01T18:48:35.441-05:00  INFO 8680 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Started SeekCustomerServiceApplication in 10.439 seconds (process running for 10.813)
+2025-04-01T18:48:36.374-05:00  INFO 8680 --- [seek-customer-service] [http-nio-9092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-01T18:48:36.374-05:00  INFO 8680 --- [seek-customer-service] [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-01T18:48:36.375-05:00  INFO 8680 --- [seek-customer-service] [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-01T18:48:36.974-05:00  INFO 8680 --- [seek-customer-service] [http-nio-9092-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 358 ms
+2025-04-01T18:50:34.278-05:00  INFO 8680 --- [seek-customer-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01T18:50:34.561-05:00  INFO 8680 --- [seek-customer-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-01T18:50:34.566-05:00  INFO 8680 --- [seek-customer-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-01T18:50:34.568-05:00  INFO 8680 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-01T18:50:34.574-05:00  INFO 8680 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-01T18:50:37.777-05:00  INFO 2580 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Starting SeekCustomerServiceApplication using Java 17.0.8 with PID 2580 (D:\workspace\empresas\seek\seek-customer-service\target\classes started by lmar11 in D:\workspace\empresas\seek\seek-customer-service)
+2025-04-01T18:50:37.780-05:00 DEBUG 2580 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-01T18:50:37.781-05:00  INFO 2580 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-01T18:50:39.370-05:00  INFO 2580 --- [seek-customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-01T18:50:39.451-05:00  INFO 2580 --- [seek-customer-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2025-04-01T18:50:40.719-05:00  INFO 2580 --- [seek-customer-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9092 (http)
+2025-04-01T18:50:40.741-05:00  INFO 2580 --- [seek-customer-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-01T18:50:40.742-05:00  INFO 2580 --- [seek-customer-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-01T18:50:40.854-05:00  INFO 2580 --- [seek-customer-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-01T18:50:40.855-05:00  INFO 2580 --- [seek-customer-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3024 ms
+2025-04-01T18:50:41.278-05:00 DEBUG 2580 --- [seek-customer-service] [main] c.l.s.security.JwtAuthenticationFilter   : Filter 'jwtTokenFilter' configured for use
+2025-04-01T18:50:41.686-05:00  INFO 2580 --- [seek-customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-01T18:50:41.982-05:00  INFO 2580 --- [seek-customer-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2dc3ece8
+2025-04-01T18:50:41.986-05:00  INFO 2580 --- [seek-customer-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-01T18:50:42.093-05:00  INFO 2580 --- [seek-customer-service] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_customer_seek?useSSL=false&serverTimezone=UTC (MySQL 8.0)
+2025-04-01T18:50:42.171-05:00  INFO 2580 --- [seek-customer-service] [main] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.036s)
+2025-04-01T18:50:42.172-05:00  WARN 2580 --- [seek-customer-service] [main] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-04-01T18:50:42.209-05:00  INFO 2580 --- [seek-customer-service] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_customer_seek`: << Empty Schema >>
+2025-04-01T18:50:42.221-05:00  INFO 2580 --- [seek-customer-service] [main] o.f.core.internal.command.DbMigrate      : Schema `db_customer_seek` is up to date. No migration necessary.
+2025-04-01T18:50:42.412-05:00  INFO 2580 --- [seek-customer-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-01T18:50:42.547-05:00  INFO 2580 --- [seek-customer-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-01T18:50:42.669-05:00  INFO 2580 --- [seek-customer-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-01T18:50:43.177-05:00  INFO 2580 --- [seek-customer-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-01T18:50:43.230-05:00  WARN 2580 --- [seek-customer-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-01T18:50:43.231-05:00  WARN 2580 --- [seek-customer-service] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-01T18:50:43.247-05:00  INFO 2580 --- [seek-customer-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-01T18:50:43.907-05:00  INFO 2580 --- [seek-customer-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-01T18:50:43.936-05:00  INFO 2580 --- [seek-customer-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-01T18:50:44.526-05:00  INFO 2580 --- [seek-customer-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-01T18:50:45.670-05:00  WARN 2580 --- [seek-customer-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-01T18:50:45.724-05:00  WARN 2580 --- [seek-customer-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 85739e02-bb08-4c33-a198-0f602a66d52d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-01T18:50:45.779-05:00  INFO 2580 --- [seek-customer-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-01T18:50:46.715-05:00  INFO 2580 --- [seek-customer-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoints beneath base path '/actuator'
+2025-04-01T18:50:47.948-05:00  INFO 2580 --- [seek-customer-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9092 (http) with context path '/'
+2025-04-01T18:50:47.967-05:00  INFO 2580 --- [seek-customer-service] [main] c.l.s.SeekCustomerServiceApplication     : Started SeekCustomerServiceApplication in 10.72 seconds (process running for 11.146)
+2025-04-01T18:50:48.195-05:00  INFO 2580 --- [seek-customer-service] [http-nio-9092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-01T18:50:48.195-05:00  INFO 2580 --- [seek-customer-service] [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-01T18:50:48.197-05:00  INFO 2580 --- [seek-customer-service] [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-01T18:50:48.897-05:00  INFO 2580 --- [seek-customer-service] [http-nio-9092-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 409 ms
+2025-04-01T18:58:07.950-05:00  INFO 2580 --- [seek-customer-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01T18:58:08.230-05:00  INFO 2580 --- [seek-customer-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-01T18:58:08.235-05:00  INFO 2580 --- [seek-customer-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-01T18:58:08.239-05:00  INFO 2580 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-01T18:58:08.246-05:00  INFO 2580 --- [seek-customer-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

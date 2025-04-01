@@ -1,6 +1,7 @@
 package com.lmar.seek_customer_service.controller;
 
 import com.lmar.seek_customer_service.security.JwtUtil;
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,6 +20,10 @@ public class AuthController {
     @Autowired
     private JwtUtil jwtUtil;
 
+    @Operation(
+            summary = "Obtener token",
+            description = "Retorna token para authenticarse en la API."
+    )
     @PostMapping("/token")
     public Map<String, String> token(@RequestParam String username) {
         String token = jwtUtil.generateToken(username);
