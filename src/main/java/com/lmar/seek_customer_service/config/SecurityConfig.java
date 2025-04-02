@@ -21,9 +21,8 @@ public class SecurityConfig {
         http.cors(Customizer.withDefaults())
                 .csrf(AbstractHttpConfigurer::disable) // Deshabilitar CSRF
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/customers").authenticated()
-                        .requestMatchers("/swagger/**","/v3/**").permitAll()
-                        .anyRequest().permitAll()
+                        .requestMatchers("/swagger/**","/v3/**", "/api/auth/token").permitAll()
+                        .anyRequest().authenticated()
                 )
                 .httpBasic(Customizer.withDefaults())
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(jwtEntryPoint()))
