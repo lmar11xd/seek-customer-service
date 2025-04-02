@@ -25,4 +25,11 @@ public class CustomerDto {
         this.age = age;
         this.birthday = birthday;
     }
+
+    public CustomerDto(String names, String lastName, int age, LocalDate birthday) {
+        this.names = names;
+        this.lastName = lastName;
+        this.age = age;
+        this.birthday = birthday;
+    }
 }
