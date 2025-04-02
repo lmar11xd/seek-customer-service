@@ -63,3 +63,6 @@ curl --location 'http://seek-customer-ms.us-east-1.elasticbeanstalk.com/api/cust
 
 ### Documentación con Swagger
 http://seek-customer-ms.us-east-1.elasticbeanstalk.com/swagger-ui/index.html
+
+### Colección Postman
+En la raíz del proyecto se encuentra la colección para importarlo desde Postman: SEEK-RETO-AWS.postman_collection.json
