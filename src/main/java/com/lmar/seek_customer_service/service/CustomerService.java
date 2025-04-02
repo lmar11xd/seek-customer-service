@@ -2,6 +2,7 @@ package com.lmar.seek_customer_service.service;
 
 import com.lmar.seek_customer_service.dto.CustomerDto;
 import com.lmar.seek_customer_service.entity.Customer;
+import com.lmar.seek_customer_service.exception.InvalidDataException;
 import com.lmar.seek_customer_service.exception.ResourceNotFoundException;
 import com.lmar.seek_customer_service.mapper.CustomerMapper;
 import com.lmar.seek_customer_service.repository.ICustomerRepository;
@@ -44,6 +45,10 @@ public class CustomerService {
     @CacheEvict(value = "customers", allEntries = true)
     public CustomerDto createCustomer(CustomerDto customerDto) {
         logger.info("Registrando cliente...");
+        if(customerDto.getAge() < 0) {
+            logger.warn("La edad no puede ser negativa");
+            throw new InvalidDataException("La edad no puede ser negativa.");
+        }
         Customer customer = CustomerMapper.INSTANCE.toEntity(customerDto);//Convertimos entidad para guardar el cliente
         customer = customerRepository.save(customer);//Guardamos el cliente
         logger.info("Cliente registrado-> nombres: {}", customer.getNames());
